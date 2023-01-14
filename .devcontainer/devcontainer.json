@@ -1,5 +1,7 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "name": "Ubuntu_php8.1",
+
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
       "version": "latest",
