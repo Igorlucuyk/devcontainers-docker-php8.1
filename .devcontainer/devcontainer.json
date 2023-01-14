@@ -1,21 +1,13 @@
 {
-  "name": "Ubuntu_php8.1",
+	"name": "Alpine_php8_1",
+	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.17",
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/shyim/devcontainers-features/php:latest": {
+            "version": "8.1"
+        },
+		"ghcr.io/shyim/devcontainers-features/symfony-cli:0": {}
+	}
 
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
-  "features": {
-    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
-      "version": "latest",
-      "enableNonRootDocker": "true",
-      "moby": "true"
-    },
-    "ghcr.io/devcontainers/features/php:1": {
-      "version": "8.1",
-      "installComposer": "true"
-    },
-    "ghcr.io/devcontainers/features/node:1": {},
-    "ghcr.io/shyim/devcontainers-features/symfony-cli:0": {}
-  },
-  "remoteEnv": {
-    "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
-  }
 }
